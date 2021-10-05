@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <style>
+    body {  
+        height: 2000vh;       
+        background-image: url(image/images.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 40px;
+    }
+   .container{
+    position: absolute;
+    padding: 3px 10px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px rgba(255,255,255,.6);
+    }
+    h3{
+        color: rgb(0, 0, 0);
+        margin-left: 35%;
+        font-size: large;
+        font-weight: bold;
+    }
+    /*- --formulir-- */
+    input[type=text], select, textarea {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    }
+    .col-25 {
+    float: left;
+    width: 14%;
+    margin-top: -1px;
+    }
+    .col-75 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+    }
+    .col-75ttl {
+    float: left;
+    width: 40%;
+    margin-top: 6px;
+    }
+    .col-75umur{
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+    }
+    .col-75alamat{
+    float: left;
+    width: 30%;
+    height: 20%;
+    margin-top: 6px;
+    }
+    .col-75desa{
+    float: left;
+    width: 20%;
+    margin-left: 2em;
+    margin-top: 6px;
+    }
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    label {
+    padding: 11px 11px 11px 0;
+    display: inline-block;
+    }
+    .box{
+    margin-top: 10px;
+    border-radius: 8px;
+    width:200px;
+    height: 22px;
+    background:rgba(190, 40, 40, 0.712);
+    color: rgb(0, 0, 0);
+    }
+    h4{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        margin-left: 20px;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>FORMULIR PPDB JALUR ZONASI TAHUN 2021</h3>
+          <form action="proses.php" method="POST" name="formppdb">
+            <!-- Info Pendaftaran-->
+            <div class="box">
+                <h4>Info Pendaftaran</h4>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                  <label for="fname">NISN</label>
+                </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname">
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-25">
+                <label for="lname">Asal Sekolah</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname">
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-25">
+                <label for="fname">Tahun Lulus</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname">
+            </div>
+            </div>
+
+            <!-- Data Calon Peserta-->
+            <div class="box">
+                <h4>Data Calon Peserta</h4>
+            </div>
+            <div class="row">
+            <div class="col-25">
+                <label for="fname">Nama Lengkap</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname">
+            </div>
+            </div> 
+            <div class="row">
+            <div class="col-25">
+                <label for="fname">NIK</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname">
+            </div>
+            </div>  
+            <div class="row">
+            <div class="col-25">
+                <label for="fname">Tempat/Tanggal Lahir</label>
+            </div>
+            <div class="col-75ttl">
+                <input type="text" id="fname" name="firstname">
+            </div>
+            <div class="col-75umur">
+                <input type="text" id="fname" name="firstname" placeholder="Umur - 19 tahun, 3 bulan">
+            </div>
+            </div> 
+            <div class="row">
+            <div class="col-25">
+                <label for="fname">Jenis Kelamin</label>
+            </div>
+            <div class="col-75">
+                <select id="country" name="country">
+                  <option value="australia">Jenis Kelamin</option>
+                  <option value="canada">Perempuan</option>
+                  <option value="usa">laki-Laki</option>
+                </select>
+            </div>
+            </div> 
+            <div class="row">
+            <div class="col-25">
+                <label for="fname">Alamat</label>
+            </div>
+            <div class="col-75alamat">
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+            </div>
+            <div class="col-75desa">
+                <input type="text" id="fname" name="firstname" placeholder="Desa/Kel">
+                <input type="text" id="fname" name="firstname" placeholder="Kecamatan">
+                <input type="text" id="fname" name="firstname" placeholder="Kabupaten">
+                <input type="text" id="fname" name="firstname" placeholder="Provinsi">
+            </div>
+            </div>  
+            <div class="row">
+            <div class="col-25">
+                <label for="fname">Email Aktif</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="xxxxxx@gmail.com">
+            </div>
+            </div>  
+            
+            <!-- Data Orang Tua-->
+            <div class="box">
+                <h4>Data Orang Tua</h4>
+            </div>
+            <div class="row">
+            <div class="col-25">
+                <label for="fname">Nomor Kartu Keluarga</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="xxxxxx@gmail.com">
+            </div>
+            </div>  
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Nomor Kartu Keluarga</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="xxxxxx@gmail.com">
+                </div>
+                </div>  
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Nomor Kartu Keluarga</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="xxxxxx@gmail.com">
+                    </div>
+                    </div>  
+        
+          </form>
+      </div>
+</body>
+</html>
