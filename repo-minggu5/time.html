@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Time Semantik</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #212c3b;
+    }
+
+    /* Style the header */
+    header {
+        background-color: #141b25;
+        padding: 1px;
+        text-align: center;
+        font-size: 35px;
+        color: rgb(255, 255, 255);
+
+    }
+
+    /* Container for flexboxes */
+    section {
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    /* Style the navigation menu */
+    nav {
+        background-color: #212c3b;
+        padding: 10px;
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        background-color: #141b25;
+    }
+    nav li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        padding: 15px 50px;
+        text-decoration: none;
+    }
+    nav li a:hover {
+        background-color: #5f84b860;
+        color: #fff;
+    }
+
+    /* Style the content */
+    article{
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: #212c3b;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+    }
+    article h1{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(245, 245, 245);
+        text-align: center;
+        font-size: 23px;
+        font-style: italic;
+    }
+    article h5{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgba(255, 255, 255, 0.384);
+    }
+
+    /* Style the footer */
+    footer {
+        padding: 10px;
+        background-color: #141b25;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+    /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+        section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        }
+    }
+    </style>
+</head>
+
+<body>
+  <header>
+    <h2>Elemen Semantik di HTML</h2>
+  </header>
+  
+  <section>
+    <nav>
+      <ul>
+          <li>
+            <a href="layout.html" class="active">Layout</a>
+          </li>
+          <li>
+            <a href="summary.html" class="active">Summary</a>
+          </li>
+          <li>
+            <a href="audio.html" class="active">Audio</a>
+          </li>
+          <li>
+            <a href="audio2.html" class="active">Audio 2</a>
+          </li>
+          <li>
+            <a href="video.html" class="active">Video</a>
+          </li>
+          <li>
+            <a href="videogif.html" class="active">Video Gif</a>
+          </li>
+          <li>
+            <a href="video-subtitle.html" class="active">Video Subtitle</a>
+          </li>
+          <li>
+            <a href="video-youtube.html" class="active">Video Youtube</a>
+          </li>
+      </ul>
+    </nav>
+
+    <article>
+      <h1>Contoh Penggunaan Time</h1>
+      <p>
+          Ditulis pada <time datetime="2021-10-13">13 Oktober 2021</time>
+      </p>
+      <p>
+          Hari ini saya ada acara dari pukul <time>08:00</time> sampai pukul <time>10:00</time>
+      </p>
+    </article>
+  </section>
+
+  <footer>
+    <p>A11.2020.12904 - Luthfiarz</p>
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Layout Semantik</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #212c3b;
+    }
+
+    /* Style the header */
+    header {
+      background-color: #141b25;
+      padding: 1px;
+      text-align: center;
+      font-size: 35px;
+      color: rgb(255, 255, 255);
+
+    }
+
+    /* Container for flexboxes */
+    section {
+      display: -webkit-flex;
+      display: flex;
+    }
+
+    /* Style the navigation menu */
+    nav {
+      background-color: #212c3b;
+      padding: 10px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 300px;
+      background-color: #141b25;
+    }
+    nav li a {
+      display: block;
+      color: rgb(255, 255, 255);
+      padding: 15px 50px;
+      text-decoration: none;
+    }
+    nav li a:hover {
+      background-color: #5f84b860;
+      color: #fff;
+    }
+
+    /* Style the figure */
+    figure img{
+      text-align: center;
+      width: 30%;
+      height: 30%;
+      border: 1px #cccccc solid;
+      padding: 4px;
+      margin-left: 300px;
+    }
+    figcaption {
+      color: rgb(131, 131, 131);
+      font-style: italic;
+      padding: 1px;
+      text-align: center;
+    }
+
+    /* Style the content */
+    article{
+      -webkit-flex: 3;
+      -ms-flex: 3;
+      flex: 3;
+      background-color: #212c3b;
+      padding: 10px;
+      color: rgb(255, 255, 255);
+    }
+
+    article h1{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      color: rgb(81, 201, 101);
+      text-align: center;
+      font-size: 23px;
+    }
+
+    /* Style the footer */
+    footer {
+      padding: 10px;
+      background-color: #141b25;
+      text-align: center;
+      color: rgb(255, 255, 255);
+    }
+
+    /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>Elemen Semantik di HTML</h2>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li>
+          <a href="summary.html" class="active">Summary</a>
+        </li>
+        <li>
+          <a href="time.html" class="active">Time</a>
+        </li>
+        <li>
+          <a href="audio.html" class="active">Audio</a>
+        </li>
+        <li>
+          <a href="audio2.html" class="active">Audio 2</a>
+        </li>
+        <li>
+          <a href="video.html" class="active">Video</a>
+        </li>
+        <li>
+          <a href="videogif.html" class="active">Video Gif</a>
+        </li>
+        <li>
+          <a href="video-subtitle.html" class="active">Video Subtitle</a>
+        </li>
+        <li>
+          <a href="video-youtube.html" class="active">Video Youtube</a>
+        </li>
+      </ul>
+    </nav>
+    <article>
+      <h1>Jadilah Sahabat Bumi</h1>
+      <figure>
+          <img src="image/sahabatbumi.jpg" alt="">
+          <figcaption>@SahabatBumi_INA</figcaption>
+      </figure>
+      <p>Apakah kita pernah sadar dimanakah kita sekarang ini? Kita sebagai manusia hidup di Bumi mulai dari lahir, kecil, beranjak dewasa, sampai kita meninggal. Kita sangat berhutang budi pada Bumi, planet tempat tinggal kita yang tercinta ini.</p>
+      <p>Tetapi, berapa banyak kita telah mengotori Bumi, merusak Bumi, dan membuat Bumi ini menjadi tidak indah lagi? Kadang-kadang kita tidak sadar bahwa perbuatan kita sangat merusak Bumi dan terkesan tidak berterima kasih pada Bumi yang telah berjasa banyak pada Bumi.</p>
+      <p>Oleh karena itu, kita harus mulai mengubah hidup kita agar perbuatan kita ini tidak lagi merusak Bumi. Tentunya kita adalah manusia yang tidak dapat melakukan semua hal. Jadi, kita cukup melakukan perbuatan yang dapat kita lakukan dan tidak perlu memaksakan diri. Jika kita hanya dapat berbuat hal-hal yang sederhana, ya kita lakukan hal sederhana tersebut. Jangan hanya karena hal sederhana yang bis kita lakukan, kita malu untuk melakukannya sehingga kita tidak melakukan apa-apa. Tetapi juga kita harus mengembangkan diri supaya bisa melakukan hal yang lebih besar lagi. Yang terpenting adalah niat dan keikhlasan</p>
+      <p>Hal-hal kecil yang dapat kita lakukan misalnya adalah membuang sampah pada tempatnya, melakukan penghematan listrik, menghemat Bahan Bakar Minyak dan masih banyak lagi.Mungkin kita sudah bosan dengan kata-kata “Buanglah Sampah Pada Tempatnya”. Kita mendengar kata-kata itu sejak kita kecil sampai dewasa. Tetapi apakah kita sudah melakukan hal yang kita anggap sederhana tersebut? Mungkin ya, mungkin tidak. Kadang-kadang untuk sampah yang besar kita ingat, tetapi jika sampahnya kecil seperti sobekan kertas, plastik, atau bungkus snack, kita membuangnya begirtu saja. Jika kita ada di kelas, maka kita taruh sampah tersebut dikolong meja. jika ada diangkot maka ditaruh dibawah tempat duduk.</p>
+      <p>Hal itu tidak hanya dilakukan oleh anak-anak, tetapi juga oleh orang dewasa. Itu menandakan bahwa yang terpenting adalah kesadaran diri. Usia tidak berpengaruh pada sikap seseorang. Yang paling berpengaruh adalah kesadaran. Itu yang paling penting. Begitu juga dengan penggunaan listrik dan air. Kita selalu menganggap bahwa lebih banyak orang yang menggunakan air lebih banyak dari diri kita sendiri sehingga kita berpikir kalaupun kita menghemat, tetap saja tidak akan berguna. Itu adalah pemikiran yang salah. Jika semua orang berfikir itu, maka tidak akan ada yang berhemat bukan? Kita harus menanamkan pikiran segala sesuatu hal yang baik itu harus dimulai dari diri kita sendiri. Jangan menunggu orang lain untuik berbuat hal kebaikan.</p>
+      <p>Oleh karena itu, maka untuk menjaga lingkungan kita ini, lingkungan Bumi kita yang tercinta ini, lakukanlah suatu hal yang kecil karena sesuatu yang besar itu tidak ada sebelum ada hal yang kecil. Jika hal kecil itu dilakukan oleh banyak orang, maka hal kecil itu akan menjadi hal yang besar. Jika seribu orang membuang sampah pada tempatnya dan menjaga kebersihan, maka daerah tersebut akan menjadi bersih. Tetapi jika seribu orang membuang sampah sembarangan, maka tentunya daerah itu akan sangat kotor sekali.</p>
+      <p>Jadi, janganlah pernah meremehkan hal-hal kecil seperti menghemat listrik, menghemat air, menghemat BBM, atau membuang sampah pada tempatnya. Lakukan mulai dari diri sendiri lalu tularkanlah pada orang-orang disekitar anda. Jadilah sahabat Bumi dan cintailah Bumi ini. Semoga jika kita telah melakukan hal terbaik yang bisa kita lakukan, Bumi ini kembali indah, sejuk, segar dan udaranya nyaman sehingga ita semakin senang hidup di Bumi ini.</p>
+    </article>
+  </section>
+
+  <footer>
+    <p>A11.2020.12904 - Luthfiarz</p>
+  </footer>
+</body>
+</html>
+
