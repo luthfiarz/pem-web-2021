@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Project Pemograman Website</title>
+    <style>
+    * {
+         margin:0; 
+         padding:0;
+         background-color: #222831;
+    }
+    nav {
+        margin:auto;
+        text-align: center;
+        width: 100%;
+        font-family: arial;
+    } 
+
+    nav ul {
+        padding: 0 20px;
+        list-style: none;
+        position: relative;
+        display: inline-table;
+        width: 100%;
+    }
+
+    nav ul li{
+        float:left;
+    }
+
+    nav ul li:hover{
+        background:#d68d9a;
+    }
+
+    nav ul li:hover a{
+        color:#000;
+    }
+
+    nav ul li a{
+        display: block;
+        padding: 25px;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    h1{
+        color: white;
+    }
+
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: white;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    textarea{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: white;
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #222831;
+        padding: 20px;
+        color: white;
+    }
+    footer{
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cv.pdf">Download CV</a></li>
+            <li><a href="kontak.html">Contact</a></li>
+            <li><a href="tentang.html">About Me</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1>Kontak Saya </h1>
+        <div>
+            <form action="/action_page.php">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="alamat email">
+          
+              <label for="pesan">Pesan</label>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+        
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+    <footer>
+        <p>Copyright &copy; 2021 Luthfia Rizma Rakatina.</p>
+    </footer>
+</body>
+</html>
